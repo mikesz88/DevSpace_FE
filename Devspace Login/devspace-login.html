@@ -2,41 +2,52 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="devspace-login.css" />
-    <title>Devspace-Login</title>
+    <title>DevSpace-Login</title>
+
+		<link rel="stylesheet" href="/css/default.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/responsive.css">
 </head>
 
 	<body>
-			<form>
-					<div class="devspace">
-							<h1><strong>DevSpace Login</strong></h1>
-					</div>
-					<div class="login">
-							<label for="email">Email Address:</label>
-							<br />
-							<input
-									type="email"
-									name="email"
-									id="email"
-									placeholder="Please type email here"
-									size="25" />
-							<br />
-							<br />
-							<label for="password">Password:</label>
-							<br />
-							<input
-									type="password"
-									name="password"
-									id="password"
-									placeholder="Please type password here"
-									size="25" />
-					</div>
+	  <div class="container">
+			<form id="login-form">
+				<div class="devspace">
+						<h1><strong>DevSpace Login</strong></h1>
+				</div>
+				<div class="login">
+						<label for="email">Email Address:</label>
+						<br />
+						<input
+								type="email"
+								name="email"
+								id="email"
+								placeholder="Please type email here"
+								size="25"
+								required >
+						<br />
+						<br />
+						<label for="password">Password:</label>
+						<br />
+						<input
+								type="password"
+								name="password"
+								id="password"
+								placeholder="Please type password here"
+								size="25"
+								required >
+				</div>
 
-					<div class="submit">
-							<br />
-							<button type="button" id="login-btn">Submit</button>
-					</div>
-			</form>
+				<div class="submit">
+						<br />
+						<button type="button" id="login-btn">Login</button>
+				</div>
+		</form>
+		</div>
+			
+			<script src="/login.js" async defer></script>
 	</body>
 </html>
