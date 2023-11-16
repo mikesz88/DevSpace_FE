@@ -1,0 +1,28 @@
+* {
+	padding: 10px;
+	margin: 0%;
+}
+body {
+	background-color: #0047ab;
+	font-size: 20px;
+}
+
+h1 {
+	color: cyan;
+	position: fixed;
+	top: 15%;
+	left: 45%;
+}
+
+.login {
+	position: fixed;
+	top: 25%;
+	left: 45%;
+	background-color: rgba(25, 116, 185, 0.54);
+}
+
+.submit {
+	position: fixed;
+	top: 40%;
+	left: 48.3%;
+}

@@ -1,0 +1,98 @@
+* {
+	padding: 10px;
+	margin: 0%;
+}
+body {
+	background-image: url(https://scontent-dfw5-2.xx.fbcdn.net/v/t39.30808-6/402853955_897327818509858_8392452519889095553_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=CNo8DcGHt5wAX-MrE2G&_nc_ht=scontent-dfw5-2.xx&oh=00_AfBuHyQeOhw7yyo80yT1ZGwKAUewTbVWQhJF4gOfGUhUyg&oe=655A7388);
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: "Press Start 2P";
+	color: #0f311b;
+}
+
+h1 {
+	color: #50c878;
+	font-weight: 100px;
+	border: dashed #50c8b4;
+	border-radius: 50px;
+	position: fixed;
+	top: 15%;
+	left: 44%;
+}
+
+img {
+	position: fixed;
+	top: 20%;
+	left: 65%;
+}
+
+.firstname {
+	position: fixed;
+	top: 22%;
+	left: 40%;
+}
+
+.firstname2 {
+	position: fixed;
+	left: 40%;
+}
+.lastname {
+	position: fixed;
+	top: 29%;
+	left: 40%;
+}
+
+.lastname2 {
+	position: fixed;
+	left: 40%;
+}
+.password {
+	position: fixed;
+	top: 36%;
+	left: 40%;
+}
+
+.password2 {
+	position: fixed;
+	left: 40%;
+}
+
+.username {
+	position: fixed;
+	top: 22%;
+	left: 52%;
+}
+
+.username2 {
+	position: fixed;
+	left: 52%;
+}
+
+.jobtitle {
+	position: fixed;
+	top: 29%;
+	left: 52%;
+}
+
+.jobtitle2 {
+	position: fixed;
+	left: 52%;
+}
+
+.confirmpassword {
+	position: fixed;
+	top: 35.7%;
+	left: 51%;
+}
+
+.confirmpassword2 {
+	position: fixed;
+	top: 38.7%;
+	left: 52%;
+}
+
+.nextpage {
+	position: fixed;
+	top: 45%;
+	left: 48.7%;
+}
