@@ -19,7 +19,7 @@ function verifyRegistrationInfo() {
     return false
   } else {
     alert("Registered Successfully");
-    window.location.href = './registerAndEditPartTwo.html'
+    window.location.href = './register-and-edit-part-two.html'
   }
     alert(errorLog);
 }
