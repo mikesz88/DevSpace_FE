@@ -1,0 +1,82 @@
+* {
+	padding: 10px;
+	margin: 0%;
+}
+body {
+	background-image: url(https://th.bing.com/th/id/R.eb54d58e9abad053df22554218dd8677?rik=Gs9XMYtrviEyjg&pid=ImgRaw&r=0);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	font-size: 25px;
+	color: thistle;
+	font-family: "Teko";
+}
+
+input {
+	background-color: lavender;
+}
+.devspace {
+	position: fixed;
+	top: 10%;
+	left: 42%;
+}
+
+button {
+	background-color: cadetblue;
+	font-family: "Teko";
+	font-size: 20px;
+}
+
+button:hover {
+	font-size: 35px;
+	color: honeydew;
+}
+
+a {
+	text-decoration: none;
+	color: honeydew;
+}
+
+a:hover {
+	color: deeppink;
+	font-size: 35px;
+	text-decoration: underline;
+}
+
+select {
+	background-color: chocolate;
+	color: brown;
+	font-size: 20px;
+	font-family: "Teko";
+}
+
+select:hover {
+	font-size: 35px;
+	color: goldenrod;
+}
+
+.find-friends {
+	position: fixed;
+	top: 18%;
+	left: 42%;
+	font-size: 20px;
+	color: yellow;
+}
+
+.listedfriends {
+	background-color: aquamarine;
+	position: fixed;
+	top: 30%;
+	left: 42.9%;
+}
+
+.addfriend {
+	position: fixed;
+	top: 55%;
+	left: 40%;
+}
+
+.friend-dashboard {
+	position: fixed;
+	top: 55%;
+	left: 47%;
+}
