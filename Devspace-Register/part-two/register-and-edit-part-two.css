@@ -1,0 +1,134 @@
+* {
+	padding: 10px;
+	margin: 0%;
+}
+body {
+	background-image: url(https://th.bing.com/th/id/R.618f083c61a7460ce0a6064319af41bd?rik=xVh09emgHbJ7GA&pid=ImgRaw&r=0);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	font-family: "Press Start 2P";
+	color: wheat;
+	font-size: 20px;
+}
+
+h1 {
+	color: gold;
+	font-weight: 100px;
+	border: double rgba(219, 47, 125, 0.284);
+	border-radius: 50px;
+	position: fixed;
+	top: 15%;
+	left: 42%;
+	font-size: 45px;
+}
+
+.background-color {
+	position: fixed;
+	top: 22%;
+	left: 30%;
+}
+
+.background-color2 {
+	appearance: none;
+	width: 250px;
+	height: 50px;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	position: fixed;
+	left: 35%;
+}
+
+.background-color2::-webkit-color-swatch {
+	border-radius: 15px;
+	border: none;
+}
+
+.background-color2::-moz-color-swatch {
+	border-radius: 15px;
+	border: none;
+}
+
+.fav-slogan {
+	position: fixed;
+	top: 33.2%;
+	left: 30%;
+}
+
+.fav-slogan2 {
+	position: fixed;
+	left: 33%;
+}
+.avatar {
+	position: fixed;
+	top: 41%;
+	left: 30%;
+}
+
+.complimentary-color {
+	position: fixed;
+	top: 22%;
+	left: 56%;
+}
+
+.complimentary-color2 {
+	appearance: none;
+	width: 250px;
+	height: 50px;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	position: fixed;
+	left: 62%;
+}
+
+.complimentary-color2::-webkit-color-swatch {
+	border-radius: 15px;
+	border: none;
+}
+
+.complimentary-color2::-moz-color-swatch {
+	border-radius: 15px;
+	border: none;
+}
+
+.fav-music {
+	position: fixed;
+	top: 33.2%;
+	left: 59%;
+}
+
+.fav-music2 {
+	position: fixed;
+	left: 65%;
+}
+
+.bio {
+	position: fixed;
+	top: 43%;
+	left: 65%;
+}
+
+.bio2 {
+	position: fixed;
+	top: 50%;
+	left: 63%;
+}
+
+.profileend {
+	position: fixed;
+	top: 68%;
+	left: 48.7%;
+}
+
+.random {
+	position: fixed;
+	top: 28.3%;
+	left: 37%;
+}
+
+.random2 {
+	position: fixed;
+	top: 28.3%;
+	left: 63.5%;
+}
