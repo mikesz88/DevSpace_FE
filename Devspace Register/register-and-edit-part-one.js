@@ -24,13 +24,13 @@ function verifyRegistrationInfo() {
       password,
       confirmPassword,
     }),
-    headers: { "Content-Type": "application/json", Authorization: token },
+    headers: { "Content-Type": "application/json", Authorization: `Bearer ${token}` },
   })
     .then((response) => response.json())
     .then((data) => console.log(data))
     .catch((error) => {
       console.error("Error updating resource", error);
     });
-    //window.location.href = "./register-and-edit-part-two.html";
+    window.location.href = "./register-and-edit-part-two.html";
   }
 }
