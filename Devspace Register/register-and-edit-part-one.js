@@ -1,10 +1,4 @@
-//const registerData = fetch("")
-//.then((response) => response.text());
-
-//console.log(registerData);
-
 function verifyRegistrationInfo() {
-  let errorLog = [];
   const firstName = document.getElementById("firstName").value;
   const lastName = document.getElementById("lastName").value;
   const username = document.getElementById("username").value;
@@ -12,14 +6,31 @@ function verifyRegistrationInfo() {
   const password = document.getElementById("password").value;
   const confirmPassword = document.getElementById("confirmPassword").value;
 
+  const token = localStorage.getItem("token");
+
   if (password.length < 8) {
-    errorLog.push("Passwords must be a minimum of 8 characters");
-   } else if (password !== confirmPassword) {
-    errorLog.push("Passwords do not match.");
-    return false
+    alert("Passwords must be a minimum of 8 characters");
+  } else if (password !== confirmPassword) {
+    alert("Passwords do not match.");
   } else {
-    alert("Registered Successfully");
-    window.location.href = './register-and-edit-part-two.html'
+
+  fetch("https://devspace.cyclic.app/api/v1/auth/updatePartOne", {
+    method: "PATCH",
+    body: JSON.stringify({
+      firstName,
+      lastName,
+      username,
+      jobTitle,
+      password,
+      confirmPassword,
+    }),
+    headers: { "Content-Type": "application/json", Authorization: `Bearer ${token}` },
+  })
+    .then((response) => response.json())
+    .then((data) => console.log(data))
+    .catch((error) => {
+      console.error("Error updating resource", error);
+    });
+    window.location.href = "./register-and-edit-part-two.html";
   }
-    alert(errorLog);
 }
