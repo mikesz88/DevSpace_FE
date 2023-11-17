@@ -15,7 +15,7 @@ document.getElementById('completeProfileForm').addEventListener('submit', async 
         biography = "Melodic Harmony: A Journey Through Sound Born from the heartbeats of humanity, music has woven its way through the fabric of time, transcending eras, cultures, and emotions. From the ancient rhythms of primal drums to the symphonic orchestrations of today, music remains a universal language, speaking to the soul in ways words cannot.";
     }
 
-    let response = await fetch('/auth/registerPartTwo', {
+    let response = await fetch('auth/registerPartTwo', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
