@@ -1,0 +1,55 @@
+* {
+	padding: 10px;
+	margin: 0%;
+}
+
+body {
+	background-image: url(https://th.bing.com/th/id/OIP.tD1vBwLQER68WxwTnL10fAAAAA?rs=1&pid=ImgDetMain);
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: "Press Start 2P";
+}
+
+a {
+	text-decoration: none;
+	color: darkgreen;
+	font-family: "Press Start 2P";
+}
+
+a:hover {
+	color: darkred;
+}
+
+button {
+	background-color: burlywood;
+}
+
+.devspace {
+	position: fixed;
+	top: 15%;
+	left: 40%;
+	color: rebeccapurple;
+	font-size: 20px;
+}
+
+.profile-updated {
+	position: fixed;
+	top: 20%;
+	left: 40.5%;
+	font-size: 17px;
+	color: coral;
+}
+
+.select {
+	position: fixed;
+	top: 40%;
+	left: 44.5%;
+	font-size: 17px;
+	color: #3d3d;
+}
+
+.links {
+	position: fixed;
+	top: 50%;
+	left: 37.2%;
+}
