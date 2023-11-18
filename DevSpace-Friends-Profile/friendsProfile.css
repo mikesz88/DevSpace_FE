@@ -1,14 +1,69 @@
+* {
+	padding: 10px;
+	margin: 0%;
+}
+
+body {
+	background-image: url(https://i.redd.it/2yps4bpn8xm01.gif);
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: "Press Start 2P";
+}
+
+a {
+	text-decoration: none;
+	color: #ffd700;
+	font-family: "Press Start 2P";
+}
+
+a:hover {
+	color: #4b0082;
+	font-size: 35px;
+	font-style: italic;
+}
+
+button {
+	background-color: #87ceeb;
+}
+
+
+.devspace-logo {
+
+}
+
+.friends {
+	position: fixed;
+	top: 50%;
+	left: 36%;
+}
+
 .navbar {
   display: flex;
-  justify-content: space-between;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
 }
 
 .profile-container {
   display: flex;
   flex-direction: column;
+  justify-content: space-b;
 }
 
 .profile-container-left,
 .profile-container-right {
  display: flex;
+ justify-content: space-between;
+}
+
+.avatar {
+  height: 100px;
+  width: 100px;
+}
+
+#top8FriendsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
 }
