@@ -24,8 +24,7 @@ const response = fetch(
   }
 )
   .then((res) => res.json())
-  .then((data) => {
-    console.log(data);
+  .then((data) => {;
     setHTML(data.data);
   })
   .catch((err) => console.log(`Error ${err}`));
@@ -38,23 +37,32 @@ function setHTML(data) {
   const avatar = data.avatar;
   const username = data.username;
   const friendCount = data.friendCount;
+  const firstName = data.firstName;
+  const lastName = data.lastName;
   const favSlogan = data.favSlogan;
   const favMusic = data.favMusic;
   const topEight = data.topEight;
   const biography = data.biography;
-  console.log(avatar, friendCount, favSlogan, favMusic, topEight, biography);
+
   getContainerElements();
 
   avatarContainer.innerHTML = `<img class="avatar" src="${avatar}" alt="Avatar of ${username}" />
   <h2 class='username'>${username}</h2>
   <p class="total-friends"> Total Friends: ${friendCount}</p>`;
 
-  favoritesContainer.innerHTML = `<p class="favorite-slogan">${
+  favoritesContainer.innerHTML = `
+  <div class="name-details">
+  <p class="first-name"> First Name: ${firstName}</p>
+  <p class="last-name"> Last Name: ${lastName}</p>
+  </div>
+  <div class="favorites">
+  <p class="favorite-slogan">${
     favSlogan ? favSlogan : "I chose to be lazy and not pick a favorite slogan"
   }</p>
   <p class="favorite-music"> ${
     favMusic ? favMusic : "I chose to be lazy and not pick my favorite music"
-  }</p>`;
+  }</p>
+  </div>`;
 
   if (topEight && topEight.length > 0) {
     topEight.forEach((friend) => {
