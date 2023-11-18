@@ -1,0 +1,14 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-container-left,
+.profile-container-right {
+ display: flex;
+}
