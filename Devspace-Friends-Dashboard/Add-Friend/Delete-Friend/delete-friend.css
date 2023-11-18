@@ -1,0 +1,87 @@
+* {
+	padding: 10px;
+	margin: 0%;
+}
+body {
+	background-image: url(https://media.giphy.com/media/1nmjLtvKvgJXi/giphy.gif);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	font-size: 25px;
+	font-family: "Teko";
+}
+
+h1 {
+	color: palegreen;
+}
+
+input {
+	background-color: lavender;
+}
+
+button {
+	background-color: cadetblue;
+	font-family: "Teko";
+	font-size: 20px;
+	color: silver;
+}
+
+button:hover {
+	font-size: 35px;
+	color: honeydew;
+}
+
+a {
+	text-decoration: none;
+	color: honeydew;
+}
+
+a:hover {
+	color: gold;
+	font-size: 35px;
+	text-decoration: underline;
+}
+
+select {
+	background-color: wheat;
+	color: black;
+	font-size: 20px;
+	font-family: "Teko";
+}
+
+select:hover {
+	font-size: 35px;
+	color: teal;
+}
+
+.devspace {
+	position: fixed;
+	top: 10%;
+	left: 42%;
+}
+
+.find-friends {
+	position: fixed;
+	top: 18%;
+	left: 42%;
+	font-size: 20px;
+	color: firebrick;
+}
+
+.listedfriends {
+	background-color: burlywood;
+	position: fixed;
+	top: 30%;
+	left: 42.9%;
+}
+
+.deletefriend {
+	position: fixed;
+	top: 55%;
+	left: 38%;
+}
+
+.friend-dashboard {
+	position: fixed;
+	top: 55%;
+	left: 47%;
+}
