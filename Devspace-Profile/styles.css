@@ -28,18 +28,15 @@
 }
 
 body {
-	color: #99edc3;
 	font-family: "Press Start 2P";
 }
 
 a {
-	color: darkviolet;
 	text-decoration: none;
 	font-family: "Press Start 2P";
 }
 
 a:hover {
-	color: darkturquoise;
 	font-size: 35px;
 	font-style: italic;
 }
