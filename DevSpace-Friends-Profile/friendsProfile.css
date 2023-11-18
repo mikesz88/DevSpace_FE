@@ -1,4 +1,5 @@
 * {
+
 	padding: 10px;
 	margin: 0%;
 }
@@ -91,4 +92,68 @@ button {
 .quadrant-4 {
 	grid-column: 2 / span 1;
 	grid-row: 2 / span 1;
+
+  padding: 10px;
+  margin: 0%;
+}
+
+body {
+  font-family: 'Press Start 2P';
+}
+
+a {
+  text-decoration: none;
+  font-family: 'Press Start 2P';
+}
+
+a:hover {
+  color: #4b0082;
+  font-size: 35px;
+  font-style: italic;
+}
+
+button {
+  background-color: #87ceeb;
+}
+
+.devspace-logo {
+  display: block;
+}
+
+.friends {
+  position: fixed;
+  top: 50%;
+  left: 36%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px;
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-b;
+}
+
+.profile-container-left,
+.profile-container-right {
+  display: flex;
+  justify-content: space-between;
+}
+
+.avatar {
+  height: 100px;
+  width: 100px;
+}
+
+#top8FriendsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+
 }

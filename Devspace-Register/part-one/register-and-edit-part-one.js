@@ -1,3 +1,10 @@
+const registrationForm = document.getElementById('registrationForm');
+
+registrationForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+  verifyRegistrationInfo();
+});
+
 function verifyRegistrationInfo() {
   const firstName = document.getElementById('firstName').value;
   const lastName = document.getElementById('lastName').value;
@@ -33,6 +40,7 @@ function verifyRegistrationInfo() {
       .catch((error) => {
         console.error('Error updating resource', error);
       });
-    window.location.href = '../part-two/register-and-edit-part-two.html';
+    window.location.href =
+      '/Devspace-Register/part-two/register-and-edit-part-two.html';
   }
 }
