@@ -1,19 +1,62 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>profilePage</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>My Profile</title>
   </head>
   <body>
-    <header>Profile</header>
-    <div class="container"></div>
-    <img src="" alt="">
-    <p>John</p>
-    <p>Doe</p>
-    <script src="" async defer></script>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li>
+          <a href="../Devspace-Register/devspace-register.html"
+            >Update Profile</a
+          >
+        </li>
+        <li>
+          <a href="../Devspace-Friends-Dashboard/friends-dashboard.html"
+            >Update Friends</a
+          >
+        </li>
+        <li><a href="../Devspace-Delete/deleteMe.html">Delete Profile</a></li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <div class="quadrant-1">
+        <div class="avatar-section">
+          <img src="avatar.jpg" alt="Avatar Image" class="avatar" />
+          <h2 class="username">Username</h2>
+          <p class="total-friends">Total Friends: 0</p>
+        </div>
+      </div>
+      <div class="quadrant-2">
+        <div class="details-section">
+          <div class="name-details">
+            <p class="first-name">First Name</p>
+            <p class="last-name">Last Name</p>
+          </div>
+          <div class="favorites">
+            <p class="favorite-slogan">Favorite Slogan</p>
+            <p class="favorite-music">Favorite Music Genre</p>
+          </div>
+        </div>
+      </div>
+      <div class="quadrant-3">
+        <div class="top-friends-section">
+          <h2>Top 8 Friends</h2>
+          <div class="friends-list"></div>
+        </div>
+      </div>
+
+      <div class="quadrant-4">
+        <div class="biography-section">
+          <h2>Biography</h2>
+          <p class="biography">User's Biography</p>
+        </div>
+      </div>
+    </div>
+    <script src="./profile.js"></script>
   </body>
 </html>
