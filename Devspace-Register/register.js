@@ -1,6 +1,6 @@
 const registerUser = async (email) => {
   const url = 'https://devspace.cyclic.app/api/v1/auth/register';
-  const data = { email }; // Body with email field
+  const data = { email };
 
   try {
     const response = await fetch(url, {
