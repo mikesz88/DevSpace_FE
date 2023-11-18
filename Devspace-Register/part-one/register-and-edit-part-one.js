@@ -33,6 +33,6 @@ function verifyRegistrationInfo() {
       .catch((error) => {
         console.error('Error updating resource', error);
       });
-    window.location.href = '../part two/register-and-edit-part-two.html';
+    window.location.href = '../part-two/register-and-edit-part-two.html';
   }
 }
