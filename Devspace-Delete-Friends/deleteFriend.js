@@ -60,7 +60,8 @@ const removeSelectedFriends = async () => {
 
     if (response.ok) {
       console.log('Success:', responseData);
-      window.location.href = '../../friends-dashboard.html';
+      window.location.href =
+        '/Devspace-Friends-Dashboard/friends-dashboard.html';
     } else {
       console.log('Error:', responseData);
     }
