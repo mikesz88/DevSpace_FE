@@ -1,3 +1,9 @@
+const registrationForm = document.getElementById('registrationForm')
+
+registrationForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+  verifyRegistrationInfo()});
+
 function verifyRegistrationInfo() {
   const firstName = document.getElementById('firstName').value;
   const lastName = document.getElementById('lastName').value;
