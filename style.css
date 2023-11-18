@@ -1,22 +1,41 @@
 body {
-  background-image: url(https://img.freepik.com/free-vector/grunge-retro-spiral-background_1017-27840.jpg?w=1060&t=st=1700263004~exp=1700263604~hmac=83467506b56892564c0e0695792215745b69a51d3c119f60f16e3390fad386ee);
+  background-image: url(https://img.freepik.com/free-vector/linear-retro-gradient-background_23-2148913434.jpg?w=1060&t=st=1700250785~exp=1700251385~hmac=1ab614476c9cf69950d1bd71dcac9c1581318dbfa6fe838451282b5f646d7095);
   background-repeat: no-repeat;
   background-size: cover;
-
 }
 
- button {
-    width: 300px;
-    height: 50px;
-    font-size: 15px;
-    margin-left: 700px;
-    margin-top: 200px;
- }
+div {
+  margin-left: 650px;
+  background-color: rgb(176, 115, 234);
+  border: 2px solid #6b0909;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  transform: perspective(600px) rotatex(20deg);
+}
 
-  .button:hover {
-    background-color: rgb(191, 18, 234);
-  }
+button {
+  width: 100px;
+  height: 30px;
+  font-size: 14px;
+  margin-left: 700px;
+  margin-top: 100px;
+}
 
+h1 {
+  font-size: 58px;
+  font-weight: bold;
+  color: rgb(84, 13, 38);
+  text-shadow: 5px 5px 8px greenyellow;
+  text-align: center;
+}
 
+p {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 20px;
+}
 
-  
+.button:hover {
+  background-color: rgb(191, 18, 234);
+}
