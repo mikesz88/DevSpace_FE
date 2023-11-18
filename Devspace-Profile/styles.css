@@ -1,33 +1,107 @@
+/* Resetting default padding and margin */
+* {
+  padding: 10px;
+  margin: 0%;
+}
+
+/* Navbar styling */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Spread items across the container */
+  align-items: center;
+  background-color: #333; /* Example background color */
+  padding: 10px;
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  width: 100%; /* Occupy full width of the navbar */
+}
+
+.nav-links li {
+  flex: 1; /* Equal distribution of list items */
+  text-align: center;
+}
+
+.nav-links a {
+  color: #fff; /* Example link color */
+  text-decoration: none;
+}
+
 body {
-	background-color: #3128da;
+  font-family: 'Press Start 2P';
 }
 
-.button {
-	width: 100px;
-	height: 30px;
-	font-size: 14px;
-	margin-left: 435px;
+a {
+  /* Anchor tag styling */
+  text-decoration: none;
+  font-family: 'Press Start 2P';
 }
 
-h1 {
-	font-size: 58px;
-	font-weight: bold;
-	color: rgb(84, 13, 38);
-	text-shadow: 5px 5px 8px greenyellow;
-	text-align: center;
+a:hover {
+  /* Hover state for anchor tags */
+  color: #4b0082;
+  font-size: 35px;
+  font-style: italic;
 }
 
-p {
-	text-align: center;
-	font-weight: bolder;
-	font-size: 20px;
+button {
+  /* Button styling */
+  background-color: #87ceeb;
 }
 
-.center-img {
-	display: block;
-	margin: 0 auto;
+.avatar {
+  width: 200px;
+  height: 200px;
 }
 
-.button:hover {
-	background-color: rgb(191, 18, 234);
+.devspace {
+  /* Positioning for Devspace title */
+  position: fixed;
+  top: 38%;
+  left: 36%;
+  font-size: 25px;
+  color: #2f4f4f;
 }
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+  height: 100vh; /* Adjust as needed */
+}
+
+/* Quadrant 1 - Top Left */
+.quadrant-1 {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+  /* Additional styling for quadrant 1 */
+}
+
+/* Quadrant 2 - Top Right */
+.quadrant-2 {
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
+  /* Additional styling for quadrant 2 */
+}
+
+/* Quadrant 3 - Bottom Left */
+.quadrant-3 {
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 1;
+  /* Additional styling for quadrant 3 */
+}
+
+/* Quadrant 4 - Bottom Right */
+.quadrant-4 {
+  grid-column: 2 / span 1;
+  grid-row: 2 / span 1;
+  /* Additional styling for quadrant 4 */
+}
+
+/* Additional styles for the rest of your sections */
+/* You can continue adding styles based on your HTML structure */
+/* ... */
