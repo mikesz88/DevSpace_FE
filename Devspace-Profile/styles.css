@@ -52,6 +52,11 @@ button {
   background-color: #87ceeb;
 }
 
+.avatar {
+  width: 200px;
+  height: 200px;
+}
+
 .devspace {
   /* Positioning for Devspace title */
   position: fixed;

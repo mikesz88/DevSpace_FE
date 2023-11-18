@@ -29,7 +29,7 @@ async function updateProfile() {
     ).textContent = `Username: ${userData.username}`;
     document.querySelector(
       '.total-friends'
-    ).textContent = `Total Friends: ${userData.totalFriends}`;
+    ).textContent = `Total Friends: ${userData.friendCount}`;
     document.querySelector(
       '.first-name'
     ).textContent = `First Name: ${userData.firstName}`;
@@ -45,6 +45,28 @@ async function updateProfile() {
     document.querySelector(
       '.biography'
     ).textContent = `Biography: ${userData.biography}`;
+    document.querySelector('.avatar').src = userData.avatar;
+
+    if (userData.topEight && userData.topEight.length > 0) {
+      const friendsListDiv = document.querySelector('.friends-list');
+      friendsListDiv.innerHTML = '';
+      userData.topEight.forEach((friend) => {
+        const friendDiv = document.createElement('div');
+        friendDiv.classList.add('friend');
+        friendDiv.id = friend.username;
+        const friendImage = document.createElement('img');
+        friendImage.style.width = '200px';
+        friendImage.style.height = '200px';
+        friendImage.src = friend.avatarURL;
+        friendImage.alt = `Avatar of ${friend.username}`;
+        const friendUsername = document.createElement('p');
+        friendUsername.textContent = friend.username;
+
+        friendDiv.appendChild(friendImage);
+        friendDiv.appendChild(friendUsername);
+        friendsListDiv.appendChild(friendDiv);
+      });
+    }
   }
 }
 
