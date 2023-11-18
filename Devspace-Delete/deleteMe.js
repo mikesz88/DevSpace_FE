@@ -3,7 +3,10 @@ const token = localStorage.getItem("token");
 function deleteMe() {
   fetch("https://devspace.cyclic.app/api/v1/auth/deleteMe", {
     method: "DELETE",
-    Authorization: `Bearer ${token}`,
+    headers: {
+    'Content-Type': 'application/json',
+      Authorization: `Bearer ${token}`,
+    }
   })
     .then((response) => response.json())
     .then((data) => {
