@@ -28,17 +28,22 @@
 }
 
 body {
-	color: ;
+	background-image: url(https://i.pinimg.com/originals/84/da/da/84dada0a5dcfd790700df3dd87897aef.gif);
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #8b0000;
 	font-family: "Press Start 2P";
 	font-size: 20px;
 }
 
 a {
+	color: DarkGreen;
 	text-decoration: none;
 	font-family: "Press Start 2P";
 }
 
 a:hover {
+	color: coral;
 	font-size: 35px;
 	font-style: italic;
 }
