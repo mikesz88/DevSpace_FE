@@ -26,7 +26,7 @@ async function updateProfile() {
   if (userData) {
     document.body.style.backgroundColor = userData.backgroundColor;
 
-    document.documentElement.style.color = userData.fontColor;
+    document.body.style.color = userData.complimentingColor;
 
     document.querySelector(
       '.username'
@@ -59,6 +59,7 @@ async function updateProfile() {
       userData.topEight.forEach((friend) => {
         const friendDiv = document.createElement('div');
         friendDiv.classList.add('friend');
+        friendDiv.style.cursor = 'pointer';
         friendDiv.id = friend.username;
         const friendImage = document.createElement('img');
         friendImage.style.width = '100px';

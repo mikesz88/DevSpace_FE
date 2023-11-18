@@ -1,25 +1,60 @@
 const token = localStorage.getItem('token');
 
-// Function to generate a random color in hex format
-function getRandomColor() {
-  return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+async function getRandomColorFromAPI() {
+  try {
+    const response = await fetch(
+      'https://devspace.cyclic.app/api/v1/auth/randomColor'
+    );
+    const data = await response.json();
+    return data.data;
+  } catch (error) {
+    console.error('Failed to get random color:', error);
+    return null;
+  }
 }
 
-// Event listener for the first random color button
+async function getRandomAvatarFromAPI() {
+  try {
+    const response = await fetch(
+      'https://devspace.cyclic.app/api/v1/auth/randomAvatar'
+    );
+    const data = await response.json();
+    return data.data;
+  } catch (error) {
+    console.error('Failed to get random avatar:', error);
+    return null;
+  }
+}
+
 document
   .getElementById('randomColorBtn1')
-  .addEventListener('click', function () {
+  .addEventListener('click', async function () {
     const backgroundColorInput = document.getElementById('backgroundColor');
-    backgroundColorInput.value = getRandomColor();
+    const color = await getRandomColorFromAPI();
+    if (color) {
+      backgroundColorInput.value = color;
+    }
   });
 
-// Event listener for the second random color button
 document
   .getElementById('randomColorBtn2')
-  .addEventListener('click', function () {
+  .addEventListener('click', async function () {
     const complimentingColorInput =
       document.getElementById('complimentingColor');
-    complimentingColorInput.value = getRandomColor();
+    const color = await getRandomColorFromAPI();
+    if (color) {
+      complimentingColorInput.value = color;
+    }
+  });
+
+document
+  .getElementById('avatar')
+  .addEventListener('click', async function (event) {
+    event.preventDefault();
+    const avatar = await getRandomAvatarFromAPI();
+    if (avatar) {
+      document.getElementById('avatar').src = avatar;
+    }
   });
 
 document
@@ -27,23 +62,15 @@ document
   .addEventListener('submit', async (event) => {
     event.preventDefault();
 
-    let backgroundColor = document.getElementById('backgroundColor').value;
-    let complimentingColor =
+    const backgroundColor = document.getElementById('backgroundColor').value;
+    const complimentingColor =
       document.getElementById('complimentingColor').value;
-    let favSlogan = document.getElementById('favSlogan').value;
-    let favMusic = document.getElementById('favMusic').value;
-    let avatar = document.getElementById('avatar').value;
-    let biography = document.getElementById('biography').value;
+    const favSlogan = document.getElementById('favSlogan').value;
+    const favMusic = document.getElementById('favMusic').value;
+    const avatar = document.getElementById('avatar').src;
+    const biography = document.getElementById('biography').value;
 
-    if (!favSlogan && !favMusic && !avatar && !biography) {
-      favSlogan = 'Where Words Fail, Music Speaks.';
-      favMusic = 'Rock n Roll.';
-      avatar = 'https://alienbudgets.s3.amazonaws.com/001-cat.png';
-      biography =
-        'Melodic Harmony: A Journey Through Sound Born from the heartbeats of humanity, music has woven its way through the fabric of time, transcending eras, cultures, and emotions. From the ancient rhythms of primal drums to the symphonic orchestrations of today, music remains a universal language, speaking to the soul in ways words cannot.';
-    }
-
-    let response = await fetch(
+    const response = await fetch(
       'https://devspace.cyclic.app/api/v1/auth/updatePartTwo',
       {
         method: 'PATCH',
@@ -61,10 +88,11 @@ document
         }),
       }
     );
+    const data = await response.json();
 
+    console.log(data.errors);
     if (response.ok) {
-      window.location.href =
-        '../../Devspace-Profile-Updated/profile-updated.html';
+      window.location.href = '/Devspace-Profile-Updated/profile-updated.html';
     } else {
       alert(
         'Failed to complete profile. Please make sure all fields are filled out correctly.'
