@@ -24,6 +24,10 @@ async function updateProfile() {
   const userData = await getUserInfo();
 
   if (userData) {
+    document.body.style.backgroundColor = userData.backgroundColor;
+
+    document.documentElement.style.color = userData.fontColor;
+
     document.querySelector(
       '.username'
     ).textContent = `Username: ${userData.username}`;
@@ -50,13 +54,15 @@ async function updateProfile() {
     if (userData.topEight && userData.topEight.length > 0) {
       const friendsListDiv = document.querySelector('.friends-list');
       friendsListDiv.innerHTML = '';
+      friendsListDiv.style.display = 'flex';
+      friendsListDiv.style.flexWrap = 'wrap';
       userData.topEight.forEach((friend) => {
         const friendDiv = document.createElement('div');
         friendDiv.classList.add('friend');
         friendDiv.id = friend.username;
         const friendImage = document.createElement('img');
-        friendImage.style.width = '200px';
-        friendImage.style.height = '200px';
+        friendImage.style.width = '100px';
+        friendImage.style.height = '100px';
         friendImage.src = friend.avatarURL;
         friendImage.alt = `Avatar of ${friend.username}`;
         const friendUsername = document.createElement('p');
