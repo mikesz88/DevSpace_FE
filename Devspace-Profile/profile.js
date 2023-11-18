@@ -65,6 +65,10 @@ async function updateProfile() {
         friendDiv.appendChild(friendImage);
         friendDiv.appendChild(friendUsername);
         friendsListDiv.appendChild(friendDiv);
+
+        friendDiv.addEventListener('click', () => {
+          window.location.href = `../Devspace-Friends-Profile/friendsProfile.html?username=${friend.username}`;
+        });
       });
     }
   }
