@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="add-friend.css" />
+    <link rel="stylesheet" href="top-eight.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Teko&display=swap"
       rel="stylesheet"
     />
-    <title>Add Friend</title>
+    <title>Top Eight Friends</title>
   </head>
   <body>
     <div class="devspace">
@@ -18,33 +18,23 @@
         <strong>Devspace</strong>
       </h1>
     </div>
-    <div class="find-friends">
-      <label for="addfriend">Find Friend (Username)</label>
-      <br />
-      <br />
-      <input
-        type="text"
-        name="findfriends"
-        id="friendUsernameInput"
-        placeholder="Type here"
-        size="25"
-      />
-    </div>
     <br />
     <div class="listedfriends">
       <select name="friends" id="friendListSelect" multiple></select>
     </div>
     <br />
-    <div class="addfriend">
-      <button id="addFriendButton">Add Friend</button>
+    <div class="topfriends">
+      <button id="confirmTopFriendsButton">Confirm Top Friends</button>
     </div>
     <br />
     <div class="friend-dashboard">
-      <a href="../friends-dashboard.html"
-        ><button>Back to Friend Dashboard</button></a
-      >
+      <button>
+        <a href="../Devspace-Friends-Dashboard/friends-dashboard.html"
+          >Back to Friend Dashboard</a
+        >
+      </button>
     </div>
 
-    <script src="./addFriend.js"></script>
+    <script src="topEight.js"></script>
   </body>
 </html>
