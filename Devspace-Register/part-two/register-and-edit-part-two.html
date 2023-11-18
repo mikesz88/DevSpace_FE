@@ -12,27 +12,36 @@
     />
     <title>Register and Edit - Two</title>
   </head>
+
   <body>
     <form id="completeProfileForm">
       <div class="devspace">
         <h1><strong>DevSpace</strong></h1>
       </div>
       <div class="background-color">
-        <label for="backgroundColor">Choose Background Color</label>
-        <br />
+        <label for="backgroundColor">Choose Background Color</label><br />
         <input
-          class="background-color2"
-          type="color"
-          name="backgroundColor"
-          id="backgroundColor"
-          value="#ff0000"
+            class="background-color2"
+            type="color"
+            name="backgroundColor"
+            id="backgroundColor"
+            value="#ff0000"
         />
-
-        <label for="complimentingColor">Complimenting Color</label>
-        <br>
-        <input type="color" id="complimentingColor" name="complimentingColor" value="#00ff00">
       </div>
       <br />
+
+      <div class="complimentary-color">
+        <label for="complimentingColor">Complimenting Color</label><br>
+        <input
+            class="complimentary-color2"
+            type="color"
+            name="complimentingColor"
+            id="complimentingColor"
+            value="#00ff00"
+        />
+      </div>
+    <br />
+
       <div class="fav-slogan">
         <label for="favSlogan">Favorite Slogan</label><br />
         <input
@@ -45,22 +54,14 @@
         />
       </div>
       <br />
+
       <div class="avatar">
         <label for="avatar">Select Avatar</label><br />
         <input type="image" src="https://picsum.photos/200" alt="picsum" id="avatar" name="avatar"/>
       </div>
       <br />
-      <div class="complimentary-color">
-        <label for="complimentingColor">Choose complimenting color</label>
-        <br />
-        <input
-          class="complimentary-color2"
-          type="color"
-          name="complimentingColor"
-          id="reg-and-edit-two"
-          value="#0000000"
-        />
-      </div>
+      <br />
+
       <div class="fav-music">
         <label for="favMusic">Favorite Music/Genre</label>
         <br />
@@ -74,6 +75,7 @@
         />
       </div>
       <br />
+
       <div class="bio">
         <label for="biography">Biography</label>
         <br />
@@ -86,17 +88,21 @@
           placeholder="Write your bio here"
         ></textarea>
       </div>
+
       <div class="profileend">
         <a href="../../Devspace Profile Updated/profile-updated.html">
           <button type="submit">Complete Profile</button>
         </a>
       </div>
+
       <div class="random">
-        <button type="button">Click For Random Color</button>
+        <button type="button" id="randomColorBtn1">Click For Random Color 1</button>
       </div>
+
       <div class="random2">
-        <button type="button">Click For Random Color</button>
+        <button type="button" id="randomColorBtn2">Click For Random Color</button>
       </div>
+
     </form>
     <script src="register-and-edit-part-two.js" async defer></script>
   </body>

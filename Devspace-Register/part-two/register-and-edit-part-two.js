@@ -1,3 +1,20 @@
+// Function to generate a random color in hex format
+function getRandomColor() {
+    return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+}
+
+// Event listener for the first random color button
+document.getElementById('randomColorBtn1').addEventListener('click', function () {
+    const backgroundColorInput = document.getElementById('backgroundColor');
+    backgroundColorInput.value = getRandomColor();
+});
+
+// Event listener for the second random color button
+document.getElementById('randomColorBtn2').addEventListener('click', function () {
+    const complimentingColorInput = document.getElementById('complimentingColor');
+    complimentingColorInput.value = getRandomColor();
+});
+
 document.getElementById('completeProfileForm').addEventListener('submit', async (event) => {
     event.preventDefault();
 
